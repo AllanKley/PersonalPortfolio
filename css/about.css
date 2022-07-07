@@ -26,7 +26,7 @@
 }
 
 .text p{
-    width: 70%;
+    width: 80%;
     font-size: 1.3em;
     text-indent: 40px;
 }
@@ -36,7 +36,10 @@
   text-decoration-thickness: 0.1em;
   text-underline-offset: 1.6px;
 }
-  
+
+.text p a {
+  color: var(--Accent-Color);
+}
 
 .about ul {
   width: 70%;
