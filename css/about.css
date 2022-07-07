@@ -1,0 +1,88 @@
+:root{
+  --icon-size: 20px;
+}
+
+.about {
+  margin-inline: auto;
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.text{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text h1{
+  font-size: 3em;
+  text-transform: uppercase;
+  align-self: left;
+  padding: 30px 0 30px 0;
+}
+
+.text p{
+    width: 70%;
+    font-size: 1.3em;
+    text-indent: 40px;
+}
+
+.text p a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 1.6px;
+}
+  
+
+.about ul {
+  width: 70%;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style: none;
+
+  padding: 30px 0 30px 0;
+}
+
+.about ul li {
+  position: relative;
+  margin-left: calc(var(--icon-size) + 10px);
+}
+
+.about ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.about ul li::before {
+  position: absolute;
+  content: "";
+
+  width: var(--icon-size);
+  aspect-ratio: 1/1;
+  background: url(../../assets/Icons/RightArrow.svg) top center no-repeat;
+  background-size: var(--icon-size);
+
+  left: calc(calc(var(--icon-size) * -1) - 6px);
+  top: 3px;
+  filter: var(--Filter-Accent);
+
+  display: inline-block;
+}
+
+
+
+
+.profile {
+  display: grid;
+  place-items: center;
+}
+
+.about img {
+  width: max(60vw, 200px);
+  border-radius: 66% 58% 42% 78% / 63% 38% 86% 63%;
+  aspect-ratio: 1/1;
+}

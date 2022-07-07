@@ -1,0 +1,66 @@
+:root {
+  --img-size: 20px;
+  --margin-left: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: var(--margin-left);
+  margin-bottom: 60px;
+  gap: 4px;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.footer div:not(:first-child)::before {
+  content: "";
+  background-color: var(--Accent-Color);
+  width: 2px;
+  height: 12px;
+}
+
+.footer div:last-child::after {
+  content: "";
+  position: absolute;
+
+  width: calc(var(--margin-left) + calc(var(--img-size) / 2));
+  height: calc(calc(var(--margin-left) + calc(var(--img-size) / 2)) / 1.5);
+  right: calc(var(--img-size) / 2);
+  bottom: calc(
+    calc(calc(calc(var(--margin-left) + calc(var(--img-size) / 2)) / 1.5) * -1) -
+      4px
+  );
+
+  border-radius: 0 0 12px 0;
+  border-right: 2px solid var(--Accent-Color);
+  border-bottom: 2px solid var(--Accent-Color);
+}
+
+.footer a {
+  transition: transform 200ms ease-in-out;
+}
+
+.footer a:hover {
+  transform: scale(1.2);
+}
+
+.footer img {
+  width: var(--img-size);
+  height: var(--img-size);
+  filter: var(--Filter-Accent);
+  display: block;
+}
+
+.footer img:hover {
+  filter: var(--Filter-Secondary);
+}

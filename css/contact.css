@@ -1,0 +1,66 @@
+.contact{
+    width: 80%;
+    margin-inline: auto;
+    height: 100vh;
+    gap: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.contact_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_left h1{
+    color: var(--Header-Color);
+    font-size: 140px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    margin-top: 100px;
+    margin-bottom: 60px;
+    width: 400px;
+}
+
+.contact .comment{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    align-items: center;
+}
+
+.contact .comment p{
+    color: var(--Link-Color);
+    width: 180px;
+    letter-spacing: 2px;
+}
+
+.contact .comment img{
+    width: 100px;
+    margin-left: -40px;
+}
+
+
+.contact_right p{   
+    width: 480px;
+    font-size: 30px;
+}
+
+.contact input{
+    color: #A7A7A7;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #A7A7A7;
+    outline: none;
+    height: 35px;
+    width: 350px;
+}
+
+.contact input::placeholder{
+    color: #A7A7A7;
+}

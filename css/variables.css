@@ -1,0 +1,20 @@
+:root {
+  --Primary-Color: #587b7f;
+  --Secondary-Color: #edf7fa;
+  --Accent-Color: #e2c044;
+  --Highlight-Color: #ff3f00;
+  --Header-Color: #393e41;
+
+  --Filter-Primary: invert(47%) sepia(23%) saturate(433%) hue-rotate(138deg)
+    brightness(91%) contrast(88%);
+  --Filter-Secondary: invert(87%) sepia(2%) saturate(2769%) hue-rotate(192deg)
+    brightness(114%) contrast(96%);
+  --Filter-Accent: invert(83%) sepia(43%) saturate(655%) hue-rotate(351deg)
+    brightness(91%) contrast(95%);
+  --Filter-Highlight: invert(32%) sepia(65%) saturate(5138%) hue-rotate(5deg)
+    brightness(105%) contrast(105%);
+  --Filter-Header: invert(19%) sepia(12%) saturate(427%) hue-rotate(159deg)
+    brightness(90%) contrast(81%);
+
+  --Nav-Bar-Widht: 5vw;
+}

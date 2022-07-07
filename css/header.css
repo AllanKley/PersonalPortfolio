@@ -1,0 +1,23 @@
+@import "./variables.css";
+
+.header {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+
+    width: 90px;
+    padding: 8px;
+    background-color: var(--Accent-Color);
+
+    border-radius: 0 100vmax 100vmax 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header img {
+    height: 40px;
+    display: block;
+    filter: var(--Filter-Secondary);
+} 
