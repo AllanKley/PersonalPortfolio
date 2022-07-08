@@ -17,100 +17,123 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
-    <div class="header">
-      <a href="#" class="noselect" draggable="false">
-          <img src="./assets/Icons/Bird.svg"
-              oncontextmenu="return false;" 
-              class="noselect" 
-              draggable="false">
-      </a>
-  </div>
-
-
-  <div class="footer">
-    <div><a href=""><img src="./assets/Icons/twitter.svg" alt=""></a></div>
-    <div><a href=""><img src="./assets/Icons/github.svg" alt=""></a></div>
-    <div><a href=""><img src="./assets/Icons/linkedin.svg" alt=""></a> </div>
-    <div><a href=""><img src="./assets/Icons/share.svg" alt=""></a> </div>
-</div>
-
-    <div class="main-content">
-
-      <div class="main" id="main">
-        <img src="./assets/Gifs/ProfilePixelGif.gif" 
-        oncontextmenu="return false;" 
-        id="gif" 
-        class="noselect" 
-        draggable="false">
-        
-        <div class="text">
-          <h1>Allan Kley</h1>
-          <h4>Não faço idéia do que colocar aqui mas isso é problema pro allan do futuro</h4>
-        </div>
+    <div class="header" id="slide">
+      <div class="content_div">
+        <ul>
+          <li>Não sei o que colocar aqui mas no futuro já ta implementado</li>
+        </ul>
       </div>
-    
-    
-      <div class="about" id="about">
-        <div class="text">
-            <h1>hey there !</h1>
-            <p>Hello, my name is Allan. I started my developer jorney in 2015 in high school and since then i’ve been
-                increasingly more addicted to it.
-            </p>
-            <p>
-                Nowadays i’m working at <a target="_blank" class="Highlight" href="https://www.bosch.com.br">Bosch</a> as a
-                software developer in training learning a whole bunch of tecnologies
-                such as:
-            </p>
-            <ul>
-                <li>c#</li>
-                <li>c++</li>
-                <li>Python</li>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-            </ul>
-          </div>
-          <div class="profile"><img src="./assets/Images/ProfilePic.jpg" alt=""></div>
-        </div>
-      
-
-
-
-        <div class="contact" id="contact">
-          <div class="contact_left">
-            <h1>let's talk !</h1>
-            <div class="comment">
-              <img src="./assets/Icons/scribbleArrow.svg" alt="" />
-              <h3>Also you can check out my socials !!</h3>
-            </div>
-          </div>
-        
-          <div class="contact_right">
-            <p>
-              Hello, my name is <input type="text" placeholder="your full name" /> and i
-              would like to have a chat with you about a
-              <input type="text" placeholder="website, job opportunity, etc" />. You can
-              reach me at <input type="text" placeholder="your email address" /> so that
-              we can initiate a conversation.
-            </p>
-          </div>
-        </div>
-        
+      <div class="link_div">
+        <img
+          src="./assets/Icons/Bird.svg"
+          oncontextmenu="return false;"
+          class="noselect"
+          draggable="false"
+        />
+      </div>
     </div>
 
+    <div class="footer">
+      <div>
+        <a href=""><img src="./assets/Icons/twitter.svg" alt="" /></a>
+      </div>
+      <div>
+        <a href=""><img src="./assets/Icons/github.svg" alt="" /></a>
+      </div>
+      <div>
+        <a href=""><img src="./assets/Icons/linkedin.svg" alt="" /></a>
+      </div>
+      <div>
+        <a href=""><img src="./assets/Icons/share.svg" alt="" /></a>
+      </div>
+    </div>
 
+    <div class="main-content">
+      <div class="main" id="main">
+        <img
+          src="./assets/Gifs/ProfilePixelGif.gif"
+          oncontextmenu="return false;"
+          id="gif"
+          class="noselect"
+          draggable="false"
+        />
+
+        <div class="text">
+          <h1>Allan Kley</h1>
+          <h4>
+            Não faço idéia do que colocar aqui mas isso é problema pro allan do
+            futuro
+          </h4>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <div class="text">
+          <h1 data-anime="left">hey there !</h1>
+          <p data-anime="left">
+            Hello, my name is Allan. I started my developer jorney in 2015 in
+            high school and since then i’ve been increasingly more addicted to
+            it.
+          </p>
+          <p data-anime="left">
+            Nowadays i’m working at
+            <a target="_blank" class="Highlight" href="https://www.bosch.com.br"
+              >Bosch</a
+            >
+            as a systems developer in training learning a whole bunch of
+            tecnologies such as:
+          </p>
+          <ul data-anime="left">
+            <li data-anime="left">c#</li>
+            <li data-anime="left">c++</li>
+            <li data-anime="left">Python</li>
+            <li data-anime="left">html</li>
+            <li data-anime="left">css</li>
+            <li data-anime="left">javascript</li>
+            <li data-anime="left">html</li>
+            <li data-anime="left">css</li>
+            <li data-anime="left">javascript</li>
+          </ul>
+        </div>
+        <div class="profile">
+          <img data-anime="right" src="./assets/Images/ProfilePic.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="contact_left">
+          <h1 data-anime="left">let's talk !</h1>
+          <div class="comment" data-anime="right">
+            <img src="./assets/Icons/scribbleArrow.svg" alt="" /
+            data-anime="right">
+            <h3 data-anime="right">Also you can check out my socials !!</h3>
+          </div>
+        </div>
+
+        <div class="contact_right" data-anime="right">
+          <p>
+            Hello, my name is
+            <input type="text" placeholder="your full name" /> and i would like
+            to have a chat with you about a
+            <input type="text" placeholder="website, job opportunity, etc" />.
+            You can reach me at
+            <input type="text" placeholder="your email address" /> so that we
+            can initiate a conversation.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <nav class="navbar">
       <ul class="link-group">
         <li><a class="noselect" href="#main" draggable="false">main</a></li>
         <li><a class="noselect" href="#about" draggable="false">about</a></li>
-        <li><a class="noselect" href="#contact" draggable="false">contact</a></li>
+        <li>
+          <a class="noselect" href="#contact" draggable="false">contact</a>
+        </li>
       </ul>
-  </nav>
-  
+    </nav>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

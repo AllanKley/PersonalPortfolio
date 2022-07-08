@@ -1,12 +1,13 @@
 @import "./variables.css";
 
 .header {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     margin-top: 30px;
 
-    width: 90px;
-    padding: 8px;
+  
+
     background-color: var(--Accent-Color);
 
     border-radius: 0 100vmax 100vmax 0;
@@ -14,10 +15,57 @@
     position: fixed;
     top: 0;
     left: 0;
+
+    transform:translate3d(calc(-100% + 6em),0,0);
+    /* transform:translate3d(0,0,0); */
+    transition: transform 300ms ease-in-out, background-color 100ms linear;
+    gap: 2em;
+
+    z-index: 2;
+  
+}
+
+.slide{
+    transform:translate3d(0,0,0);
+    background-color: var(--Highlight-Color);
 }
 
 .header img {
+    cursor: pointer;
     height: 3em;
     display: block;
     filter: var(--Filter-Secondary);
+    margin-right: 1.2em;
+    margin-left: auto;
 } 
+.header ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 10px;
+    gap: .5em;
+}
+
+.header li img{
+    width: 1.5em;
+}
+
+.header:hover{
+    background-color: var(--Highlight-Color);
+}
+
+.link_div{
+    height: 100%;
+    width: 6em;
+    border-radius: 0 100vmax 100vmax 0;
+}
+
+.content_div{
+    height: 4em;
+    width: calc(100% - 6em);
+    display: flex;
+    align-items: center;
+}
+
+.changeColor{
+    background-color: var(--Highlight-Color);
+}
