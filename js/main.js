@@ -43,13 +43,13 @@ if(target.length){
 
 window.addEventListener('click', function(e){  
     let element = this.document.getElementById("slide");
-    let slide_div = this.document.getElementById("slide_div");
-
+    let link_div = this.document.getElementById("link_div");
+    
     if (element.contains(e.target)){
         element.classList.add("slide");
-        slide_div.classList.add("changeColor");
+        link_div.classList.add("changeColor");
     } else{
         element.classList.remove("slide");
-        slide_div.classList.remove("changeColor");
+        link_div.classList.remove("changeColor");
     }
   });
