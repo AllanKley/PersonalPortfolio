@@ -47,8 +47,9 @@ body{
 
 [data-anime]{
   opacity: 0;
-  transition: 3s;
+  transition: transform 800ms ease-in-out;
 }
+
 [data-anime="left"]{
 transform: translate3d(-50px,0,0);
 }

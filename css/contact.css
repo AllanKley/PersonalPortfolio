@@ -73,3 +73,7 @@
     color: #A7A7A7;
     font-size: .5em;
 }
+
+.contact .comment img:hover{
+    transform: scale(1.2);
+}
