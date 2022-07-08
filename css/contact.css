@@ -43,6 +43,7 @@
 .contact .comment img{
     width: 100px;
     margin-left: -40px;
+    transition: transform 300ms ease-in-out;
 }
 
 
@@ -75,5 +76,5 @@
 }
 
 .contact .comment img:hover{
-    transform: scale(1.2);
+    transform: rotate(20deg) translateX(-50%);
 }
