@@ -65,7 +65,18 @@ window.addEventListener('click', function(e){
 
 
 
+// var refreshIntervalId = setInterval(function() {
+//     image = document.getElementById('gif');
+//     image.src = "./assets/ProfilePixelGif.gif";
+// },1)
 
+
+function character() {
+    // clearInterval(refreshIntervalId);
+    image = document.getElementById('gif');
+    image.src = "https://raw.githubusercontent.com/AllanKley/PersonalPortfolio/main/assets/Gifs/ProfilePixelGif.gif?token=GHSAT0AAAAAABVBNTSF6QWUCG6HQU6CD77OYWKAZSQ";
+    console.log("entrou");
+}
 
 
 

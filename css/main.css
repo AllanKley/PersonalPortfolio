@@ -12,6 +12,7 @@
   z-index: 0;
   height: 33vw;
   margin-left: calc(var(--Nav-Bar-Widht/2));
+  cursor: pointer;
 }
 
 .main .text{
