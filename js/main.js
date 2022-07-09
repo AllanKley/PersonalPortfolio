@@ -17,6 +17,7 @@ const debounce = function(func, wait, i, immediate){
 
 const target = document.querySelectorAll ('[data-anime]');
 
+
 const animationClass = 'animate';
 
 function animeScroll(){
@@ -24,6 +25,11 @@ function animeScroll(){
     target.forEach(function(element){
         if((windowTop) > element.offsetTop){
             element.classList.add(animationClass)
+        }else{
+            
+            //!  ------------- maybe take this off -------------
+            element.classList.remove(animationClass)
+            //!  -----------------------------------------------
         }
     })
 }
@@ -53,3 +59,64 @@ window.addEventListener('click', function(e){
         link_div.classList.remove("changeColor");
     }
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

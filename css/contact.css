@@ -1,7 +1,11 @@
+:root{
+    --btn-back: .4em;
+}
+
 .contact{
-    width: 80%;
+    width: 70%;
     margin-inline: auto;
-    height: 100vh;
+    min-height: 100vh;
     gap: 160px;
     display: flex;
     flex-direction: row;
@@ -11,16 +15,16 @@
 .contact_left{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    gap: 10vh;
 }
 
 .contact_left h1{
     color: var(--Header-Color);
-    font-size: 10em;
+    font-size: 7.5em;
     line-height: 1;
     text-transform: uppercase;
 
-    margin-top: 250px;
+    margin-top: 30%;
     margin-bottom: 60px;
     width:100%;
 }
@@ -30,30 +34,30 @@
     flex-direction: row;
     gap: 30px;
     margin-top: auto;
-    margin-bottom: 50px;
     align-items: center;
+    justify-content: right;
+    margin-right: 20%;
 }
 
 .contact .comment h3{
     color: var(--Link-Color);
-    width: 180px;
+    width: 50%;
     letter-spacing: 2px;
 }
 
-.contact .comment img{
-    width: 100px;
-    margin-left: -40px;
-    transition: transform 300ms ease-in-out;
-}
+
 
 
 .contact_right p{   
-    width: 80%;
-    font-size: 2.8em;
+    width: 100%;
+    font-size: 2em;
 }
 
 .contact_right{   
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
 }
 
 
@@ -68,13 +72,53 @@
     font-size: 1em;
 }
 
-
-
 .contact_right p input::placeholder{
     color: #A7A7A7;
     font-size: .5em;
 }
 
-.contact .comment img:hover{
-    transform: rotate(20deg) translateX(-50%);
+.comment_arrow{
+    width: 100px;
+    margin-left: -40px;
+}
+
+.comment_arrow img{
+    transition: transform 300ms ease-in-out;
+}
+
+.comment_arrow:hover img{
+    transform: rotate(10deg) translateX(-50%) translateY(20%);
+}
+
+.btn{
+    align-self:center;
+    padding: .8em 2.4em .8em 2.4em;
+    /* border: 1px solid white; */
+    outline: 1px solid var(--Header-Color);
+    border-radius: .5em;
+    position: relative;
+    transition: outline-width 200ms linear;
+    font-size: 1.2em;
+    letter-spacing: 1ch;
+    font-weight: bold;
+    color: var(--Header-Color);
+}
+
+.btn::after{
+    position: absolute;
+    content: '';
+    inset: calc(-1*var(--btn-back)) calc(1*var(--btn-back)) calc(1*var(--btn-back)) calc(-1*var(--btn-back));
+    background-color: var(--Accent-Color);
+    border-radius: .5em;
+    z-index: -1;
+    
+    transition: inset 200ms linear;
+}
+
+.btn:hover::after{
+    inset: 0;
+}
+
+.btn:hover{
+    outline-width: 4px;
 }

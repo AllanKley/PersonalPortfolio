@@ -6,7 +6,8 @@
 @import "./nav-bar.css";
 @import "./variables.css";
 @import "./reset.css";
-
+@import "./hobbies.css";
+@import "./ball_animation.css";
 
 html {
   scroll-behavior: smooth;
@@ -17,8 +18,9 @@ body{
   margin:0;
   background-color: var(--Primary-Color);
   color: var(--Secondary-Color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   width: 100%;
+  font-size: 13px;
 }
 
 .main-content{
@@ -47,7 +49,7 @@ body{
 
 [data-anime]{
   opacity: 0;
-  transition: transform 800ms ease-in-out;
+  transition: transform 800ms ease-in-out, opacity 800ms ease-in-out;
 }
 
 [data-anime="left"]{

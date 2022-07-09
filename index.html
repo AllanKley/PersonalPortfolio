@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -68,49 +68,88 @@
       </div>
 
       <div class="about" id="about">
-        <div class="text">
-          <h1 data-anime="left">hey there !</h1>
-          <p data-anime="left">
+        <div class="text" data-anime="left">
+          <h1>hey there !</h1>
+          <p>
             Hello, my name is Allan. I started my developer jorney in 2015 in
-            high school and since then i’ve been increasingly more addicted to
+            high school and since then i've been increasingly more addicted to
             it.
           </p>
-          <p data-anime="left">
-            Nowadays i’m working at
+          <p>
+            Nowadays i'm working at
             <a target="_blank" class="Highlight" href="https://www.bosch.com.br"
               >Bosch</a
             >
             as a systems developer in training learning a whole bunch of
             tecnologies such as:
           </p>
-          <ul data-anime="left">
-            <li data-anime="left">c#</li>
-            <li data-anime="left">c++</li>
-            <li data-anime="left">Python</li>
-            <li data-anime="left">html</li>
-            <li data-anime="left">css</li>
-            <li data-anime="left">javascript</li>
-            <li data-anime="left">html</li>
-            <li data-anime="left">css</li>
-            <li data-anime="left">javascript</li>
+          <ul>
+            <li>c#</li>
+            <li>c++</li>
+            <li>Python</li>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
           </ul>
         </div>
-        <div class="profile">
-          <img data-anime="right" src="./assets/Images/ProfilePic.jpg" alt="" />
+        <div class="profile" data-anime="right">
+          <img src="./assets/Images/ProfilePic.jpg" alt="" />
         </div>
+      </div>
+
+      <div class="hobbies" id="hobbies">
+        <h1 class="hobbies_h1" data-anime>Things i like</h1>
+        <ul class="hobbies_ul">
+          <li class="hobbies_card" data-anime="left">
+            <img src="./assets/Images/Dragon.svg" alt="" class="card_icon" />
+            <h2 class="card_title">Dungeons&Dragons</h2>
+            <p class="card_description">
+              I like Dungeons and Dragons :p
+              afawfawfafawfawfawfawffawfegkhviuawiudgawoufboaybfaiyegfybaoviypiyarbvbvbiyapvbauvbpaiiuscgbupdnvyvboiudvn\oi
+            </p>
+          </li>
+          <li class="hobbies_card" data-anime="right">
+            <div class="card_icon">
+              <div class="wrapper">
+                <div class="bound">
+                  <span class="ball">
+                    <span class="dot"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <h2 class="card_title">Animation</h2>
+            <p class="card_description">
+              I like Animation :p
+              afawfawfafawfawfawfawffawfegkhviuawiudgawoufboaybfaiyegfybaoviypiyarbvbvbiyapvbauvbpaiiuscgbupdnvyvboiudvn\oi
+            </p>
+          </li>
+          <li class="hobbies_card" data-anime="left">
+            <img src="./assets/Images/Rubicks.svg" alt="" class="card_icon" />
+            <h2 class="card_title">Rubicks Cube</h2>
+            <p class="card_description">
+              I like Drawing :p
+              afawfawfafawfawfawfawffawfegkhviuawiudgawoufboaybfaiyegfybaoviypiyarbvbvbiyapvbauvbpaiiuscgbupdnvyvboiudvn\oi
+            </p>
+          </li>
+        </ul>
       </div>
 
       <div class="contact" id="contact">
         <div class="contact_left">
-          <h1 data-anime="left">let's talk !</h1>
-          <div class="comment" >
-            <img src="./assets/Icons/scribbleArrow.svg" alt=""
-            data-anime="right">
-            <h3 data-anime="right">Also you can check out my socials !!</h3>
+          <h1 data-anime>let's talk !</h1>
+          <div class="comment" data-anime="right">
+            <div class="comment_arrow">
+              <img src="./assets/Icons/scribbleArrow.svg" alt="" />
+            </div>
+            <h3>Also you can check out my socials !!</h3>
           </div>
         </div>
 
-        <div class="contact_right" data-anime="right">
+        <div class="contact_right" data-anime>
           <p>
             Hello, my name is
             <input type="text" placeholder="your full name" /> and i would like
@@ -120,16 +159,20 @@
             <input type="text" placeholder="your email address" /> so that we
             can initiate a conversation.
           </p>
+          <a href="" class="btn">Send me</a>
         </div>
       </div>
     </div>
 
     <nav class="navbar">
       <ul class="link-group">
-        <li><a class="noselect" href="#main" draggable="false">main</a></li>
-        <li><a class="noselect" href="#about" draggable="false">about</a></li>
+        <li><a class="noselect" href="#main" draggable="false">Main</a></li>
+        <li><a class="noselect" href="#about" draggable="false">About</a></li>
         <li>
-          <a class="noselect" href="#contact" draggable="false">contact</a>
+          <a class="noselect" href="#hobbies" draggable="false">Hobbies</a>
+        </li>
+        <li>
+          <a class="noselect" href="#contact" draggable="false">Contact</a>
         </li>
       </ul>
     </nav>
