@@ -66,13 +66,10 @@ window.addEventListener('click', function(e){
 
 
 
-function character() {
+function PlayGif() {
     image = document.getElementById('gif');
-    image.src = "https://raw.githubusercontent.com/AllanKley/PersonalPortfolio/main/assets/Gifs/ProfilePixelGif.gif?token=GHSAT0AAAAAABVBNTSFJX7OCM4QJJLJN4NKYWKA27Q";
-    console.log("entrou");
+    image.src = "https://raw.githubusercontent.com/AllanKley/AllanKley/main/public/images/ProfileGifNoLoop.gif";
 }
-
-
 
 
 
