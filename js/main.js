@@ -78,26 +78,25 @@ function PlayGif() {
 
 
 
+currentDiv(1);
 
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
 
+function showDivs(n) {
+    var i;
+    var mainPics = document.getElementsByClassName("mainPic");
 
-function copy(){
-    var Url = document.getElementById("box");
-    Url.value = window.location.href;
-    Url.focus();
-    Url.select();
-    document.getElementById("custom-tooltip").style.display = "inline";
-    document.execCommand("copy");
-    setTimeout( function() {
-        document.getElementById("custom-tooltip").style.display = "none";
-    }, 1000);
+    if (n > mainPics.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = mainPics.length}
 
-};
+    for (i = 0; i < mainPics.length; i++) {
+        mainPics[i].style.display = "none";
+    }
 
-
-
-
-
+    mainPics[slideIndex-1].style.display = "block";
+}
 
 
 

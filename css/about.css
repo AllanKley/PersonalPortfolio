@@ -84,14 +84,38 @@
 
 
 .profile {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.about img {
+.mainPic{
   width: max(40vw, 200px);
   border-radius: 66% 58% 42% 78% / 63% 38% 86% 63%;
   aspect-ratio: 1/1;
+  object-fit: cover;
+  display: none;
+}
+
+.sub_pics{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.subPic{
+  width: 70px;
+  border-radius: 15px;
+  object-fit: cover;
+  opacity: .5;
+  cursor: pointer;
+  transition: opacity 200ms linear;
+}
+
+.subPic:hover{
+  opacity: 1;
 }
 
 
@@ -119,5 +143,8 @@
   }
   .about img {
     width: 15em;
+  }
+  .sub_pics img{
+    width: 50px;
   }
 }
