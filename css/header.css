@@ -74,7 +74,7 @@
     background-color: #ccaa30;
 }
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
     .header {
         
     }

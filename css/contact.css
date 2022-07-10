@@ -126,7 +126,7 @@
 }
 
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
     .contact{
         flex-direction: column;
         gap: 0;

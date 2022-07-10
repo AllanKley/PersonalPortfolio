@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
   .main{
     flex-direction: column;
     position: relative;

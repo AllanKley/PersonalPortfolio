@@ -92,7 +92,7 @@
     align-self: center;
 }
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
     .hobbies_card{
         width: 90%;
         height: auto;

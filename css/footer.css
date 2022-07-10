@@ -68,7 +68,7 @@
   filter: var(--Filter-Secondary);
 }
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
   .footer{
     display: none;
   }

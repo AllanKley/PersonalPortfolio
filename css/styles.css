@@ -67,7 +67,7 @@ transform: translate3d(-50px,0,0);
 }
 
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
   .main-content{
     gap: 0;
   }

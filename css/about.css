@@ -95,7 +95,7 @@
 }
 
 
-@media (max-width: var(--Responsive-width)) {
+@media (max-width: 1000px) {
 
   .text h1{
     font-size: 3em;
@@ -114,5 +114,8 @@
   }
   .about ul li{
     font-size: 1em;
+  }
+  .about img {
+    display: none;
   }
 }
