@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .bound {
     animation-duration: 1s;
   }

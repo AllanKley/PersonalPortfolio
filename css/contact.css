@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 :root{
     --btn-back: .4em;
 }
