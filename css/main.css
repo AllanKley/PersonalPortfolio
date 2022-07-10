@@ -39,6 +39,7 @@
   .main{
     flex-direction: column;
     position: relative;
+    min-height: 70vh;
   }
 
   .main img{

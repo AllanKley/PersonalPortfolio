@@ -8,6 +8,7 @@
 @import "./reset.css";
 @import "./hobbies.css";
 @import "./ball_animation.css";
+@import "./socials.css";
 
 html {
   scroll-behavior: smooth;

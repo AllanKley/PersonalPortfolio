@@ -96,7 +96,9 @@
 
 
 @media (max-width: 1000px) {
-
+  .about{
+    flex-direction: column-reverse;
+  }
   .text h1{
     font-size: 3em;
     text-align: center;
@@ -116,6 +118,6 @@
     font-size: 1em;
   }
   .about img {
-    display: none;
+    width: 15em;
   }
 }
