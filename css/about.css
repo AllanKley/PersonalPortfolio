@@ -93,7 +93,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: var(--Responsive-width)) {
 
   .text h1{
     font-size: 3em;

@@ -18,4 +18,6 @@
     brightness(90%) contrast(81%);
 
   --Nav-Bar-Widht: 5vw;
+
+  --Responsive-width: 1000px;
 }
