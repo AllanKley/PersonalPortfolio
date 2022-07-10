@@ -36,4 +36,9 @@
 .navbar a:hover{
     color: var(--Header-Color);
 }
-    
+
+@media (max-width: 480px) {
+    .navbar{
+        display: none;
+    }
+}

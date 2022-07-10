@@ -122,3 +122,31 @@
 .btn:hover{
     outline-width: 4px;
 }
+
+
+@media (max-width: 480px) {
+    .contact{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 5em;
+    }
+    .contact h1{
+        font-size: 6em;
+        text-align: center;
+    }
+    .contact .comment{
+        display: none;
+    }
+    .contact_right p{
+        font-size: 1.8em;
+    }
+    .contact_right p input{
+        width: 9em;
+    }
+    .contact_right{
+        gap: 2em;
+    }
+    .btn{
+        padding: .4em 1.2em .4em 1.2em;
+    }
+}

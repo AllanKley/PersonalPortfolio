@@ -73,3 +73,9 @@
 .changeColor{
     background-color: #ccaa30;
 }
+
+@media (max-width: 480px) {
+    .header {
+        
+    }
+}

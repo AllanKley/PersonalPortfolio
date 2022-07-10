@@ -65,3 +65,9 @@
 .footer img:hover {
   filter: var(--Filter-Secondary);
 }
+
+@media (max-width: 480px) {
+  .footer{
+    display: none;
+  }
+}

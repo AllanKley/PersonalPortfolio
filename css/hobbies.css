@@ -89,3 +89,37 @@
     text-align: center;
     align-self: center;
 }
+
+@media (max-width: 480px) {
+    .hobbies_card{
+        width: 90%;
+        height: auto;
+        margin-inline: auto;
+   }
+
+   .hobbies_ul{
+    width: 90%;
+    margin-inline: auto;
+   }
+
+   .card_title{
+    font-size: 1.5em;
+   }
+   .card_description{
+    font-size: .9em;
+   }
+   .card_icon{
+    width: 8em;
+    height: 8em;
+    right: -4em;
+    top: 30%;
+   }
+   .hobbies_card:nth-child(2n) .card_icon{
+    left: -4em;
+    }
+
+    .hobbies_card:nth-child(2n){
+        margin-left: 0;
+        border-width: 3px 3px 3px 0px;
+    }
+}

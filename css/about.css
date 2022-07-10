@@ -91,3 +91,26 @@
   border-radius: 66% 58% 42% 78% / 63% 38% 86% 63%;
   aspect-ratio: 1/1;
 }
+
+
+@media (max-width: 480px) {
+
+  .text h1{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .text p{
+    font-size: 1.3em;
+    text-align: left;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .about ul{
+    width: 100%;
+  }
+  .about ul li{
+    font-size: 1em;
+  }
+}
