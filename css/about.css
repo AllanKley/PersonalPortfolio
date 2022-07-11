@@ -122,6 +122,7 @@
 @media (max-width: 1000px) {
   .about{
     flex-direction: column-reverse;
+    min-height: 50vh;
   }
   .text h1{
     font-size: 3em;
