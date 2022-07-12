@@ -50,12 +50,12 @@
 
 
 
-.contact_right p{   
+.form p{   
     width: 100%;
     font-size: 2em;
 }
 
-.contact_right{   
+.form{   
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
 }
 
 
-.contact_right p input{
+.form input{
     color: #A7A7A7;
     background: transparent;
     border: none;
@@ -74,7 +74,7 @@
     font-size: 1em;
 }
 
-.contact_right p input::placeholder{
+.form input::placeholder{
     color: #A7A7A7;
     font-size: .5em;
 }
@@ -98,12 +98,15 @@
     /* border: 1px solid white; */
     outline: 1px solid var(--Header-Color);
     border-radius: .5em;
+    border: none;
+    background-color: transparent;
     position: relative;
     transition: outline-width 200ms linear;
     font-size: 1.2em;
     letter-spacing: 1ch;
     font-weight: bold;
     color: var(--Header-Color);
+    cursor: pointer;
 }
 
 .btn::after{
